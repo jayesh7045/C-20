@@ -11,7 +11,8 @@ int main()
 	double b{ 4.5 };
 	auto t = maximum(a, b);
 	cout << t << endl;
-
+	auto r = maximum(90, 'h');
+	cout << r << endl;
 	// Here the return type will be deduced by the compiler itself
 	return 0;
 }
