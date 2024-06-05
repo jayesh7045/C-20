@@ -1,6 +1,6 @@
-#include<iostream>
+ #include<iostream>
 using namespace std;
-template<typename a, typename b> auto sol(a x, b y) -> decltype((x > y) ? 1 : 0);
+template<typename a, typename b> auto sol(a x, b y) -> decltype((x > y) ? 1 : 0); // This is known as trailing return type for the functions..
 
 int main()
 {
