@@ -2,8 +2,8 @@
 using namespace std;
 template<int threshold, typename b> bool isValid(b collection[], size_t size)
 {
-	T sum{};
-	for (T i{}; i < size; i++)
+	b sum{};
+	for (b i{}; i < size; i++)
 	{
 		sum += collection[i];
 	}
