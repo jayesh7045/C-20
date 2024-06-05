@@ -18,3 +18,5 @@ int main()
 
 	return 0;
 }
+
+// Output Hello world  --> Compares the pointers and not the actual strings
