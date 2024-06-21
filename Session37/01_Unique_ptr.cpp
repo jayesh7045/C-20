@@ -57,6 +57,18 @@ int main()
 	unique_ptr<int> n1{ new int(200) };
 	cout << *n1 << endl;
 
+	// the std::make_unique is used to do {new Dog("Joggy", 303)} --> so this line "make_unique<Dog>("Joggy", 303) --> This line internally is doing {new Dog("Joggy", 303)}"
+	unique_ptr<Dog> dog3 = make_unique<Dog>("Joggy", 303);
+	dog3->printData();
+
+
+	unique_ptr<int> n2 = make_unique<int>(400);
+	cout << "The value of the n2 variable is --> " << *n2 << endl;
+
+
+	cout << "dog3 is pointing to the address of --> " << dog3.get() << endl;
+	cout << "n2 is pointing to the addredd of ---> " << n2.get() << endl;
+
 	return 0;
 }
 
@@ -64,3 +76,5 @@ int main()
 // and now we have created a instance of the unique pointer with the help of the dynamically allocated pointer
 // so the dog_temp is a dynamically allocated memory in the heap which the user is responsible to delete by himself and,
 // The dog1 is the memory created by the unique pointer which will be automatically deallocated automatically by itself.
+
+// Whenever the scope of the unique ptr goes out of scope then the destructor for that variable is automatically called.
