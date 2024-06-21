@@ -1,0 +1,2 @@
+// static Member variable
+// Static members are the member variables which are not tied to any object of the class. They live in the context of object blueprints. They are created even before a single class object has been created.
