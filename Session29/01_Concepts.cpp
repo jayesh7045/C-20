@@ -33,8 +33,19 @@ t fun(t a, t b) requires integral<t>{
 */
 
 
+
+
 /*
 // syntax 4
+auto fun(integral auto a, integral auto b){
+    return a + b;
+}
+*/
+
+
+
+/*
+// syntax 5
 t fun(t a, t b) requires integral<t>{
     return a + b;
 }
@@ -62,5 +73,5 @@ int main()
 
 // In this session we discussed on the ways in which we can define a function template which is restricted to work only on the integral types of input values. If we will try to use it with the chars then it will work because
 // the chars are convertible to int's but as strings are not convertible to ints we can not use it.
-s
+
 // We can not use the floats or doubles as the parameters for the function because those can not be connot be converted to int. 
